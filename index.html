@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Diversificação Genética com Ratos</title>
+        <link rel="stylesheet" href="./css/style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Explorando a Diversificação Genética com Ratos</h1>
+            <p>Aprenda sobre variações genéticas através de exemplos interativos, incluindo mutações!</p>
+        </header>
+
+        <main>
+            <section id="introduction">
+                <h2>O que é Diversificação Genética?</h2>
+                <p>A diversificação genética refere-se à variedade de combinações genéticas que ocorrem durante a reprodução. Os ratos são frequentemente usados em estudos científicos devido à sua semelhança genética com os humanos e sua rápida reprodução.</p>
+            </section>
+
+            <section id="simulation">
+                <h2>Simulação Genética Interativa</h2>
+                <p>Escolha as características dos pais e veja como os filhotes podem parecer.</p>
+                <div id="controls">
+                    <label for="traitA">Cor da pelagem do Pai 1:</label>
+                    <select id="traitA">
+                        <option value="black">Pelagem Preta</option>
+                        <option value="white">Pelagem Branca</option>
+                    </select>
+
+                    <label for="traitB">Cor da pelagem do Pai 2:</label>
+                    <select id="traitB">
+                        <option value="black">Pelagem Preta</option>
+                        <option value="white">Pelagem Branca</option>
+                    </select>
+
+                    <label for="earA">Tamanho da orelha do Pai 1:</label>
+                    <select id="earA">
+                        <option value="small">Pequenas</option>
+                        <option value="large">Grandes</option>
+                    </select>
+
+                    <label for="earB">Tamanho da orelha do Pai 2:</label>
+                    <select id="earB">
+                        <option value="small">Pequenas</option>
+                        <option value="large">Grandes</option>
+                    </select>
+
+                    <label for="sizeA">Tamanho do Pai 1:</label>
+                    <select id="sizeA">
+                        <option value="small">Pequeno</option>
+                        <option value="large">Grande</option>
+                    </select>
+
+                    <label for="sizeB">Tamanho do Pai 2:</label>
+                    <select id="sizeB">
+                        <option value="small">Pequeno</option>
+                        <option value="large">Grande</option>
+                    </select>
+
+                    <label for="mutationChance">Chance de Mutação (%):</label>
+                    <input type="number" id="mutationChance" value="10" min="0" max="100">
+
+                    <button id="generate">Gerar Filhote</button>
+                </div>
+
+                <canvas id="canvas" width="500" height="400"></canvas>
+                
+                <div id="albino-description">
+                    <h3>Descrição da Mutação</h3>
+                    <p id="description">Nenhuma mutação foi detectada neste filhote.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 Estudos Genéticos com Ratos</p>
+        </footer>
+
+        <script src="./js/script.js"></script>
+    </body>
+</html>
+
